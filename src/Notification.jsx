@@ -16,9 +16,9 @@ const Notification =  (prop) => {
                 <article className="text">
                     <p><span className="user">{prop.user}</span>&nbsp;&nbsp;{prop.action}&nbsp;<span className="highlight">{prop.highlight}</span>&nbsp;&nbsp;{prop.live && <img src={Live} alt="live"/>}<br/><span className="time">{prop.time}</span></p>
                 </article>
-                <div className="live-img">
+              {prop.liveImg && <div className="live-img">
                     <img src={prop.liveImg}  alt="."/>
-                </div>
+                </div>}
             </div>     
             {prop.comment && <div className="message">
                 <p>{prop.comment}</p>
