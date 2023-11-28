@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Fraunces:wght@700&family=Hanken+Grotesk:wght@500&family=Inter:wght@400;700;800&family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Montserrat:ital,wght@0,500;1,200&family=Open+Sans&family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Playpen+Sans:wght@700&family=Plus+Jakarta+Sans:wght@500;800&family=Poppins:ital,wght@0,700;1,400;1,800&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@400;700&family=Rubik:ital@1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ### Primary */
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  /* ### Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+body {
+  font-family: Plus Jakarta Sans, sans-serif;
+  font-size: 16px;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Very-light-grayish-blue);
+}
+
+.card {
+  padding: 1rem 0.8rem;
+  max-width: 100vw;
+  background-color: var(--White);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+header h3 {
+  font-size: 1.2rem;
+}
+
+header span {
+  padding: 0.2rem 0.7rem;
+  background-color: var(--Blue);
+  color: var(--White);
+  border-radius: 0.4rem;
+  margin-left: 0.5rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+header p {
+  color: var(--Dark-grayish-blue);
+}
+
+.notification {
+  margin-bottom: 1rem;
+}
+
+.box {
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+   padding: 1rem;
+   border-radius: 1rem;
+}
+
+.user {
+  font-weight: 800;
+  color: black;
+}
+
+.time {
+  color: var(--Grayish-blue);
+}
+
+.highlight {
+  font-weight: 800;
+}
+
+picture img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.notification p {
+  font-size: 0.9rem;
+  padding-left: 1rem;
+  color: var(--Dark-grayish-blue);
+  line-height: 1.25rem;
+  min-width: 250px;
+}
+
+.live-img img{
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  color: rgba(0, 0, 0, 0);
+}
+
+.message {
+  margin-left: 3.7rem;
+  margin-right: 1rem;
+  border: 1px solid hsl(211, 68%, 94%);
+  padding:1rem 0.5rem;
+}
+
+header p:hover {
+  color: var(--Blue);
+  cursor: pointer;
+}
+
+.user:hover {
+  color: var(--Blue);
+  cursor: pointer;
+}
+
+.highlight:hover {
+  color: var(--Blue);
+  cursor: pointer;
+}
+
+.message:hover {
+  background-color: var(--Light-grayish-blue-1) ;
+  cursor: pointer;
+}
+
+.live-img {
+  border: 2px solid var(--Light-grayish-blue-1);
+  cursor: pointer;
+}
+
+@media(min-width: 768px) {
+    .card {
+      max-width: 720px;
+      margin: 1.5rem, 0;
+      padding: 0 1.5rem;
+    }
+    .message {
+     margin-right: 3rem;
+     padding:1rem;
+    }
+
+    .message p {
+      font-size: 1rem;
+    }
+    
+}
+
+
+
+
+
+
+
